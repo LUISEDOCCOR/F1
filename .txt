@@ -1,0 +1,4 @@
+--Juego de Fórmula Uno para terminal, creado por Luis Eduardo Ocegueda Cortés--
+--Sin Licencia Oficial--
+--Creado con Python--
+--Puedes descargar este código y modificarlo--
