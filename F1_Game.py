@@ -4,8 +4,6 @@ import time
 
 neumaticos = None
 neumaticospc = None 
-gas = None
-gaspc= None
 clearConsole = lambda: os.system('cls' if os.name in ('nt', 'dos') else 'clear')
 x = None
 
@@ -54,9 +52,11 @@ else:
 print("\n")
 
 print(name + " vamos a tener un duelo con otro piloto.")
-print("Recuerda siempre cuidar tus neumaticos y el nivel de combustible\n")
+print("Recuerda siempre cuidar tus neumáticos\n")
 
 print("Generando Rival..." )
+
+time.sleep(5)
 
 clearConsole()
 
@@ -81,58 +81,58 @@ elif namepc ==5:
 print( name + " tu rival es {}".format(namepc))
 print("\n")
 
-print("La duración de la carrera es de 5 vueltas.\n")
+time.sleep(2)
+clearConsole()
 
-vueltas = ("[/////]")
+print("Tus neumáticos equipados duaran 7 vueltas, con un uso promedio")
+print("\n")
 
-print("Combustible: [//////////]")
+print("A continuación tendremos la clasificación")
 
-gas = "[//////////]"
-gaspc = "[//////////]"
+time.sleep(5)
+
+
+print("Los neumáticos no se desgatan durante las clasificación")
+
+time.sleep(2)
+
+clearConsole()
+
+clas = random.randint(1, 2 )
+
+if clas == 1:
+    print(name + " tienes la pole felicidades")
+    poss = 1
+    posspc = 2
+
+else:
+    print(name + " quedaste en segundo!")
+    poss = 1
+    posspc = 2
+
+
+print("A continuacion te dare algunos datos para la carrera")
 
 time.sleep(4)
-clearConsole()
-
-print(name + " Preparate, faltan 3 segundos para empezar la clasificación")
-
-print("[# # #]\n")
-time.sleep(1)
-
-print("[# # -]\n")
-time.sleep(1)
-
-print("[# - -]\n")
-time.sleep(1)
-
-print("[- - -]\n")
-time.sleep(1)
-
-
-
-print(name + " se apagan las luces, empezamos!")
-clearConsole()
-
-lugar = random.randint(1, 2)
-
-if lugar ==1:
-    print(name + " quedaste en primer lugar {} en segundo lugar ".format(namepc))
-else:
-    print(name + " quedaste en segundo lugar {} en primer lugar ".format(namepc))
 
 clearConsole()
 
-print("Empazamos la carrera.")
-print("Recuerda que la duración de la carreara es de 5 Vueltas")
+neumaticos = "[///////]"
+neumaticospc = "[///////]"
+vueltas = "[#######]"
+
+
+print("Neumáticos " + neumaticos)
+print("Neumáticos de rival " + neumaticospc)
+print("Numero de Vueltas " + vueltas + " en total hay 7 vueltas")
+print("Rival {}".format(namepc))
+
+time.sleep(4.5)
 clearConsole()
 
-gas = "[///////---]"
-gaspc = "[///////---]"
+print("Antes de empezar ocupas un director de carrera.")
+director = input("¿Cómo quieres que se llame?")
 
 
-print("Rival: {}".format(namepc))
-print("Vueltas: " + vueltas)
-print("Conbustible" + gas)
-print("Conbustible Rival " + gaspc)
-
-
-
+print("Tu director de carrera es: " + director)
+print("YA NO HAY MÁS, VERSION 1.O (BETA) BY LUIS EDUARDO OCEGUEDA CORTÉS")
